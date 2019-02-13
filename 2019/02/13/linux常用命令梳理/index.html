@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head><meta name="generator" content="Hexo 3.8.0">
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title> linux常用命令梳理 | WindowsNT </title>
+	<meta property="og:title" content=" linux常用命令梳理 | WindowsNT ">
+	<meta name="twitter:title" content=" linux常用命令梳理 | WindowsNT ">
+
+	<meta property="og:type" content="article">
+	<meta name="twitter:card" content="summary">
+
+	<meta name="description" content=" linux常用命令梳理 | WindowsNT ">
+	<meta property="og:description" content=" linux常用命令梳理 | WindowsNT ">
+	<meta name="twitter:description" content=" linux常用命令梳理 | WindowsNT ">
+
+	<link rel="icon" type="image/x-icon" href="http://yoursite.com/asset/img/favicon.png">
+
+	<link rel="image_src" href="http://yoursite.com/asset/img/logo.png">
+	<meta property="og:image" content="http://yoursite.com/asset/img/logo.png">
+
+	<link href="http://yoursite.com/atom.xml" title="WindowsNT" type="application/atom+xml" rel="alternative">
+
+	<link rel="canonical" href="/2019/02/13/linux常用命令梳理/index.html">
+
+	<link rel="stylesheet" href="/asset/css/style.css">
+
+</head>
+
+<body>
+
+	<div class="layout-header">
+		<header class="header">
+			<div class="layout-logo">
+				<div class="panel-logo">
+
+					<div class="box-logo">
+						<a href="/" title="WindowsNT"><img src="/asset/img/logo.png" class="img-logo"></a>
+					</div>
+					<div class="box-main-title">
+						<h1><a href="/">WindowsNT</a></h1>
+					</div>
+					<div class="box-sub-title">
+
+					</div>
+				</div>
+			</div>
+			<div class="layout-menu">
+				<div class="box-menu-list">
+					<nav class="page-nav">
+						<ul class="menu-list">
+
+							<li class="box-menu-item"><a href="/"><span class="menu-item">Home</span></a></li>
+
+							<li class="box-menu-item"><a href="/archives"><span class="menu-item">Sitemap</span></a></li>
+
+							<li class="box-menu-item"><a href="/page/"><span class="menu-item">Page</span></a></li>
+
+						</ul>
+					</nav>
+
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<div class="layout-content">
+
+
+		<div class="row panel-content panel-post-item">
+			<div class="box-post-item">
+				<article class="post-item" itemscope="" itemtype="http://schema.org/Article">
+
+
+
+
+					<p class="content-meta">
+						<span class="meta-date" itemprop="datePublished" content="2019-02-13">2019-02-13</span>
+
+
+					</p>
+
+
+					<h2 class="box-content-title">
+						<a href="/2019/02/13/linux常用命令梳理/" itemprop="url"><span class="content-title" itemprop="name">linux常用命令梳理</span></a>
+					</h2>
+
+					<div class="content post-item-content" itemprop="articleBody">
+
+<p>#linux常用命令梳理</p>
+<p><em>常用：</em></p>
+<blockquote>
+<p>ls：查看目录中的文件</p>
+</blockquote>
+<blockquote>
+<p>cat：查看文件中的文本</p>
+</blockquote>
+<blockquote>
+<p>mv：重命名/移动</p>
+</blockquote>
+<blockquote>
+<p>touch：新建文件/修改文件时间戳</p>
+</blockquote>
+<p>#如何使用explainshell.com来检索命令的含义呢？</p>
+<p>首先打开网站，在页面中间的文本框内输入你要查询的命令，如：cat，然后点击explain。</p>
+<p>然后页面将跳转到对“cat”命令进行解释的页面，页面上将会提示：</p>
+<blockquote>
+<p>concatenate files and print on the standard output。</p>
+</blockquote>
+<p>#其他常用命令：</p>
+<p>cd /home 进入 ‘/ home’ 目录’</p>
+<p>cd .. 返回上一级目录</p>
+<p>cd ../.. 返回上两级目录</p>
+<p>cd 进入个人的主目录</p>
+<p>cd ~user1 进入个人的主目录</p>
+<p>cd - 返回上次所在的目录</p>
+<p>pwd 显示工作路径</p>
+<p>ls 查看目录中的文件</p>
+<p>ls -F 查看目录中的文件</p>
+<p>ls -l 显示文件和目录的详细资料</p>
+<p>ls -a 显示隐藏文件</p>
+<p>ls <em>[0-9]</em> 显示包含数字的文件名和目录名</p>
+<p>tree 显示文件和目录由根目录开始的树形结构(1)</p>
+<p>lstree 显示文件和目录由根目录开始的树形结构(2)</p>
+<p>mkdir dir1 创建一个叫做 ‘dir1’ 的目录’</p>
+<p>mkdir dir1 dir2 同时创建两个目录</p>
+<p>mkdir -p /tmp/dir1/dir2 创建一个目录树</p>
+<p>rm -f file1 删除一个叫做 ‘file1’ 的文件’</p>
+<p>rmdir dir1 删除一个叫做 ‘dir1’ 的目录’</p>
+<p>rm -rf dir1 删除一个叫做 ‘dir1’ 的目录并同时删除其内容</p>
+<p>rm -rf dir1 dir2 同时删除两个目录及它们的内容</p>
+<p>mv dir1 new_dir 重命名/移动 一个目录</p>
+<p>cp file1 file2 复制一个文件</p>
+<p>cp dir/* . 复制一个目录下的所有文件到当前工作目录</p>
+<p>cp -a /tmp/dir1 . 复制一个目录到当前工作目录</p>
+<p>cp -a dir1 dir2 复制一个目录</p>
+<p>ln -s file1 lnk1 创建一个指向文件或目录的软链接</p>
+<p>ln file1 lnk1 创建一个指向文件或目录的物理链接</p>
+
+					</div>
+
+
+
+
+				</article>
+			</div>
+
+		</div>
+
+		<div class="panel-post-nav">
+			<div class="box-post-nav">
+
+
+					<a href="/2019/02/13/第二篇博客/" title="第二篇博客">&larr; Prev</a>
+
+
+
+					<a href="/2019/02/13/hello-world/" title="Hello World">Next &rarr;</a>
+
+
+			</div>
+		</div>
+
+
+	</div>
+
+	<div class="layout-footer" style="clear: both">
+		<div class="panel-footer">
+			<div class="box-footer">
+				<footer class="footer">
+					<p class="cr">&copy; 2019 <a href="https://github.com/foreachsam/" target="_blank">Tony Dee</a> </p>
+
+					<span class="theme">Powered: <a href="http://hexo.io/" target="_blank">Hexo</a>, Theme: <a href="https://github.com/foreachsam/hexo-theme-monogatari" target="_blank">Monogatari</a></span>
+				</footer>
+			</div>
+		</div>
+	</div>
+
+
+
+
+</body>
+</html>
